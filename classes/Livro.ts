@@ -54,6 +54,7 @@ export class Livro implements CRUDLivro {
     const novoArray = [...livros, novoLivro];
 
     fs.writeFileSync(pathLivros, JSON.stringify(novoArray));
+    console.log("Livro cadastrado com sucesso!");
   }
 
   public listar(): void {
@@ -74,6 +75,7 @@ export class Livro implements CRUDLivro {
     livros.splice(index, 1);
 
     fs.writeFileSync(pathLivros, JSON.stringify(livros));
+    console.log("Livro removido com sucesso!");
   }
 
   public atualizar(ISNB: number): void {

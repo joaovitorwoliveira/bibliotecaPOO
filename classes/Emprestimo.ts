@@ -100,7 +100,7 @@ export class Emprestimo {
     );
 
     if (index === -1) {
-      console.log("Emprestimo não encontrado - Método!");
+      console.log("Emprestimo não encontrado!");
       return;
     }
 

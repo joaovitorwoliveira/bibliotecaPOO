@@ -38,6 +38,7 @@ export class Membro extends Pessoa implements CRUDMembro {
     const novoArray = [...membros, novoMembro];
 
     fs.writeFileSync(pathMembros, JSON.stringify(novoArray));
+    console.log("Membro cadastrado com sucesso!");
   }
 
   public listar(): void {
@@ -58,6 +59,7 @@ export class Membro extends Pessoa implements CRUDMembro {
     membros.splice(index, 1);
 
     fs.writeFileSync(pathMembros, JSON.stringify(membros));
+    console.log("Membro removido com sucesso!");
   }
 
   public atualizar(numeroDeMatricula: number): void {

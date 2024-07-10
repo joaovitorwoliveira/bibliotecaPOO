@@ -17,7 +17,7 @@ export function listarLivros(): Livro[] {
   const dadosLivros = fs.readFileSync(pathLivros, "utf-8");
   const livrosObj = JSON.parse(dadosLivros);
 
-  // Transformar objetos simples em instâncias de Livro
+  // Transforma objetos simples em instâncias de Livro
   const livros = livrosObj.map(
     (livro: any) =>
       new Livro(
@@ -44,7 +44,7 @@ export function listarMembros(): Membro[] {
   const dadosMembros = fs.readFileSync(pathMembros, "utf-8");
   const membrosObj = JSON.parse(dadosMembros);
 
-  // Transformar objetos simples em instâncias de Membro
+  // Transforma objetos simples em instâncias de Membro
   const membros = membrosObj.map(
     (membro: any) =>
       new Membro(
@@ -70,6 +70,7 @@ export const dadosEmprestimosHistorico = fs.readFileSync(
   "utf-8"
 );
 export const emprestimosHistorico: any = JSON.parse(dadosEmprestimosHistorico);
+
 export const pathEmprestimosAtivos = path.join(
   __dirname,
   "./banco-de-dados",
@@ -119,7 +120,7 @@ export function listarEmprestimosHistorico(): Emprestimo[] {
         emprestimo._id
       );
     })
-    .filter((emprestimo): emprestimo is Emprestimo => emprestimo !== null); // Filtra os empréstimos inválidos
+    .filter((emprestimo): emprestimo is Emprestimo => emprestimo !== null);
 
   return emprestimosHistoricoInstancias;
 }

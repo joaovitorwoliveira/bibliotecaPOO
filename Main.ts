@@ -60,7 +60,6 @@ while (true) {
             const livro = new Livro(titulo, autor, ISNB, anoDePublicacao);
             livro.cadastrar(titulo, autor, ISNB, anoDePublicacao);
 
-            console.log("Livro cadastrado com sucesso!");
             break;
 
           case 2:
@@ -87,7 +86,6 @@ while (true) {
             const livroParaRemover = new Livro("", "", 0, 0);
             livroParaRemover.remover(ISNBDolivroParaRemover);
 
-            console.log("Livro removido com sucesso!");
             break;
 
           default:
@@ -135,7 +133,6 @@ while (true) {
               numeroDeMatricula
             );
 
-            console.log("Membro cadastrado com sucesso!");
             break;
 
           case 2:
@@ -151,7 +148,6 @@ while (true) {
             const membroParaAtualizar = new Membro("", "", 0, 0);
             membroParaAtualizar.atualizar(matriculaDoMembroParaAtualizar);
 
-            console.log("Membro atualizado com sucesso!");
             break;
 
           case 4:
@@ -162,7 +158,6 @@ while (true) {
             const membroParaRemover = new Membro("", "", 0, 0);
             membroParaRemover.remover(matriculaDoMembroParaRemover);
 
-            console.log("Membro removido com sucesso!");
             break;
 
           default:
