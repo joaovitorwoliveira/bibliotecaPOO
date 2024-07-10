@@ -9,12 +9,6 @@ import {
   listarEmprestimosHistorico,
 } from "../Util";
 
-jest.mock("prompt-sync", () => {
-  return jest.fn().mockImplementation(() => {
-    return jest.fn().mockImplementationOnce(() => "Novo Título");
-  });
-});
-
 describe("Emprestimo", () => {
   let emprestimosHistoricoBackup: string;
   let emprestimosAtivosBackup: string;

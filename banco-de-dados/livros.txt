@@ -1,1 +1,1 @@
-[{"_titulo":"Senhor dos Anéis","_autor":"Tolkien","_ISNB":222,"_anoDePublicacao":1999},{"_titulo":"O Hobbit","_autor":"Tolkien","_ISNB":111,"_anoDePublicacao":2000}]
+[{"_titulo":"Senhor dos Anéis","_autor":"Tolkien","_ISNB":222,"_anoDePublicacao":1999},{"_titulo":"O Hobbit","_autor":"Tolkien","_ISNB":111,"_anoDePublicacao":2000},{"_titulo":"Duna","_autor":"Frank Herbert","_ISNB":909,"_anoDePublicacao":1960}]

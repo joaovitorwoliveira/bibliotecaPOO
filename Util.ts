@@ -174,7 +174,7 @@ export function listarEmprestimosAtivos(): Emprestimo[] {
         emprestimo._id
       );
     })
-    .filter((emprestimo): emprestimo is Emprestimo => emprestimo !== null); // Filtra os empréstimos inválidos
+    .filter((emprestimo): emprestimo is Emprestimo => emprestimo !== null);
 
   return emprestimosAtivosInstancias;
 }
